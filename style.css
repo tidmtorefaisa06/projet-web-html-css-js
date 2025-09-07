@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  color: #222;
+}
+
+header {
+  background: url("https://i.pinimg.com/originals/75/50/f0/7550f09bc2cef4097e9d866bc5424b2a.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  background: black; 
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+nav {
+  text-align: center;
+  background: black;
+  padding: 10px;
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 8px 15px;
+}
+
+nav a:hover {
+  background: gold;
+  color: black;
+  border-radius: 5px;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 3px solid gold;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#articles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+article {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+}
+
+article img {
+  width: 100%;
+  border-bottom: 2px solid gold;
+}
+
+article h3 {
+  margin: 10px 0;
+  color: black;
+}
+
+article p {
+  color: #555;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: gold;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: black;
+  color: gold;
+}
+
+/* Pied de page */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  #articles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+}
